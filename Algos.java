@@ -1,5 +1,8 @@
 package com.ryannm;
 
+// Question: https://www.codechef.com/ZCOPRAC/problems/ZCO12003/
+// Solution: https://www.codechef.com/viewsolution/12133997
+
 import java.util.*;
 public class Algos{
     private LinkedList a = new LinkedList();
@@ -26,7 +29,7 @@ public class Algos{
             int n = in.nextInt();
             int[] ar = new int[n];
             for(int i=0;i<n;i++){
-                ar[i]=in.nextInt();
+                ar[i]=in.nextInt(); // For some reason, program stops after i=8
             }
             new Algos().doStuff(ar);
         }
@@ -90,10 +93,7 @@ public class Algos{
                 index--;
             }
             return node.data;
-            /* Exception in thread "main" java.lang.NullPointerException
-	            at Main$LinkedList.get(Main.java:90)
-	            at Main.doStuff(Main.java:10)
-	            at Main.main(Main.java:29) */
+           
         }
 
         public int size() {
